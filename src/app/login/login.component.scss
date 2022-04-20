@@ -1,0 +1,50 @@
+body, h2, label, input, button{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+.container{
+  width: 360px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+h2{
+  margin-top: 20vh;
+  text-align: center;
+}
+form{
+  width: 200px;
+  margin-left: auto;
+  margin-top: 5vh;
+  margin-right: auto;
+}
+label{
+  font-size: medium;
+  font-weight: 500;
+}
+.row{
+  display: table;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+input{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input:focus{
+  outline: 1px solid rgb(131, 131, 131);
+}
+span{
+  color: red;
+  font-size: small;
+}
+button{
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  padding: 5px 20px;
+  display: block;
+}

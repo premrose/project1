@@ -1,0 +1,16 @@
+<h2>Sign In to Continue! </h2>
+
+<div class="container">
+  <form [formGroup]="loginForm">
+    <label class="row" for="username">Username</label>
+    <input class="row" type="text" id="username" formControlName="userName" required>
+    <span *ngIf="loginForm.controls.userName?.invalid && (loginForm.controls.userName?.dirty || loginForm.controls.userName?.touched)">
+        {{userErr()}}</span><br>
+    <label class="row" for="password">Password</label>
+    <input class="row" type="password" id="password" formControlName="passWord" required>
+    <span *ngIf="loginForm.controls.passWord?.invalid && (loginForm.controls.passWord?.dirty || loginForm.controls.passWord?.touched)">
+      {{passErr()}}</span><br>
+    <button (click)="submit()" [disabled]="loginForm.invalid">Login</button>
+  </form>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,70 @@
+<div class="row">
+  <h1 class="intro">Welcome {{ username }}</h1>
+  <button (click)="submit()">Logout</button>
+</div>
+<div class="gallery" loading="lazy">
+  <div class="box" *ngFor="let item of response0" title="{{ item.id }}">
+    <a target="_parent" href="{{ item.url }}">
+      <img class="thumbnail"  lazyLoad="{{ item.thumbnailUrl }}" alt="{{ item.title }}"/>
+    </a>
+    <p class="text"> {{ item.title }}</p>
+  </div>
+  <div class="box" *ngFor="let item of response1" title="{{ item.id }}">
+    <a target="_parent" href="{{ item.url }}">
+      <img class="thumbnail"  lazyLoad="{{ item.thumbnailUrl }}" alt="{{ item.title }}"/>
+    </a>
+    <p class="text"> {{ item.title }}</p>
+  </div>
+  <div class="box" *ngFor="let item of response2" title="{{ item.id }}">
+    <a target="_parent" href="{{ item.url }}">
+      <img class="thumbnail"  lazyLoad="{{ item.thumbnailUrl }}" alt="{{ item.title }}"/>
+    </a>
+    <p class="text"> {{ item.title }}</p>
+  </div>
+  <div class="box" *ngFor="let item of response3" title="{{ item.id }}">
+    <a target="_parent" href="{{ item.url }}">
+      <img class="thumbnail"  lazyLoad="{{ item.thumbnailUrl }}" alt="{{ item.title }}"/>
+    </a>
+    <p class="text"> {{ item.title }}</p>
+  </div>
+  <div class="box" *ngFor="let item of response4" title="{{ item.id }}">
+    <a target="_parent" href="{{ item.url }}">
+      <img class="thumbnail"  lazyLoad="{{ item.thumbnailUrl }}" alt="{{ item.title }}"/>
+    </a>
+    <p class="text"> {{ item.title }}</p>
+  </div>
+  <div class="box" *ngFor="let item of response5" title="{{ item.id }}">
+    <a target="_parent" href="{{ item.url }}">
+      <img class="thumbnail"  lazyLoad="{{ item.thumbnailUrl }}" alt="{{ item.title }}"/>
+    </a>
+    <p class="text"> {{ item.title }}</p>
+  </div>
+  <div class="box" *ngFor="let item of response6" title="{{ item.id }}">
+    <a target="_parent" href="{{ item.url }}">
+      <img class="thumbnail"  lazyLoad="{{ item.thumbnailUrl }}" alt="{{ item.title }}"/>
+    </a>
+    <p class="text"> {{ item.title }}</p>
+  </div>
+  <div class="box" *ngFor="let item of response7" title="{{ item.id }}">
+    <a target="_parent" href="{{ item.url }}">
+      <img class="thumbnail"  lazyLoad="{{ item.thumbnailUrl }}" alt="{{ item.title }}"/>
+    </a>
+    <p class="text"> {{ item.title }}</p>
+  </div>
+  <div class="box" *ngFor="let item of response8" title="{{ item.id }}">
+    <a target="_parent" href="{{ item.url }}">
+      <img class="thumbnail"  lazyLoad="{{ item.thumbnailUrl }}" alt="{{ item.title }}"/>
+    </a>
+    <p class="text"> {{ item.title }}</p>
+  </div>
+  <div class="box" *ngFor="let item of response9" title="{{ item.id }}">
+    <a target="_parent" href="{{ item.url }}">
+      <img class="thumbnail"  lazyLoad="{{ item.thumbnailUrl }}" alt="{{ item.title }}"/>
+    </a>
+    <p class="text"> {{ item.title }}</p>
+  </div>
+</div>
+
+
+
+<router-outlet></router-outlet>
